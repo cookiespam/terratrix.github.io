@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 terratrix.github.io
 ===================
 =======
@@ -103,3 +104,7 @@ Or, you can be more surgical by specifying a particular element:
 $('article:first').readmore('destroy');
 ```
 >>>>>>> 40c74c090f234a75d33386ab10586c11d901707f
+=======
+Please refer to [jQuery Mambo Plugin](http://valeriobarrila.com/mambo.html "jQuery Mambo Plugin") page because at the moment I didn't made a good README on GitHub (as you can see)
+
+>>>>>>> 99a281af0f5ac471460a92f0a4b5649603935cbb
