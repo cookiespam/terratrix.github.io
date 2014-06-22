@@ -1,3 +1,4 @@
+
 * {
     font-family: Segoe UI;
 }
@@ -46,13 +47,6 @@ header a {
     height: 100%;
     overflow: hidden;
     padding-bottom: 50px;
-}
-
-article {
-    width: 33%;
-    height: 33%;
-    border-radius: 2px;
-    background-color: white;
 }
 
 footer {
@@ -140,16 +134,16 @@ h1, h3, h5 {
     border: 4px solid #009AFF;
     border-radius: 45px;
     display: block;
-    height: 90px;
-    width: 90px;
-    margin-left: 20px;
+    height: 70px;
+    width: 70px;
+    margin-left: 24px;
 }
 
 .avatar img {
     border: 5px solid transparent;
     border-radius: 45px; /* must be width + border */
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 img:hover {
@@ -160,159 +154,10 @@ section > section {
     float: left;
 }
 
-.demo {
-    width: 700px;
-    margin: 0 auto;
-    margin-left: 2%;
-    background-color: #3498db;
-}
-
-.demo h1 {
-    margin: 33px 0 25px;
-}
-
-.demo h3 {
-    margin: 10px 0;
-}
-
-pre {
-    background: #fff;
-}
-
-@media only screen and (max-width: 1150px) {
-
-.demo {
-    margin: 2%;
-    width: 100%;
-}
-
-.how-use {
-    float: left;
-    width: 300px;
-    display: none;
-}
-}
-
-#tabInfo {
-    display: none;
-}
-
-ul.resp-tabs-list, p {
-    margin: 0px;
-    padding: 0px;
-}
-
-.resp-tabs-list li {
-    font-weight: 600;
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-    padding: 12px 15px;
-    margin: 0;
-    list-style: none;
-    cursor: pointer;
-    float: left;
-    width: 29%;
-    text-align: center;
-    height: 35px;
-    vertical-align: middle;
-}
-
-span {
-    line-height: 40px;
-}
-
-.resp-tabs-container {
-    padding: 0px;
-    clear: left;
-    width: 100%;
-    background-color: #2980b9;
-    color: white;
-}
-
-h2.resp-accordion {
-    cursor: pointer;
-    padding: 5px;
-    display: none;
-}
-
-.resp-tab-content {
-    display: none;
-    overflow: auto;
-}
-
-.resp-tab-active {
-    border: 1px solid #2980b9;
-    border-bottom: 1px solid #2980b9 !important;
-    margin-bottom: -1px !important;
-    padding: 12px 14px 14px 14px !important;
-}
-
-.resp-tab-active {
-    background-color: #2980b9;
-}
-
-.resp-content-active, .resp-accordion-active {
-    display: block;
-}
-
-.resp-tab-content {
-    border: 1px solid #2980b9;
-    border-bottom: 1px solid #2980b9 !important;
-    width: 99.7%;
-}
-
-h2.resp-accordion {
-    font-size: 13px;
-    border-left: 1px solid #2980b9;
-    border-right: 1px solid #2980b9;
-    border-top: 1px solid #2980b9;
-    margin: 0px;
-    border-bottom: 1px solid #2980b9!important;
-    padding: 10px 15px;
-    background-color: #3498db;
-}
-
-h2.resp-tab-active {
-    border-bottom: 0px solid #2980b9 !important;
-    margin-bottom: 0px !important;
-    padding: 10px 15px !important;
-    background-color: #2980b9;
-}
-
-h2.resp-tab-title:last-child {
-    border-bottom: 12px solid #2980b9 !important;
-    background: blue;
-}
-
-/*n change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 1150px) {
-
-ul.resp-tabs-list {
-    display: none;
-}
-
-h2.resp-accordion {
-    display: block;
-}
-
-.resp-vtabs .resp-tab-content {
-    border: 1px solid #2980b9;
-}
-
-.resp-vtabs .resp-tabs-container {
-    border: none;
-    float: none;
-    width: 100%;
-    min-height: initial;
-    clear: none;
-}
-
-.resp-accordion-closed {
-    display: none !important;
-}
-
-.resp-vtabs .resp-tab-content:last-child {
-    border-bottom: 1px solid #2980b9 !important;
-}
+.readmore-js-toggle {
+    padding-bottom: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    padding-top: 5px;
 }

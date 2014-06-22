@@ -7,26 +7,8 @@
 <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
 <link rel="stylesheet" type="text/css" href="index.css"/>
 <script type="text/javascript" src="jquery.mambo.min.js"></script>
+<script src="readmore.min.js"></script>
 <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion           
-            width: '700px', //auto or any width like 600px
-            fit: true,   // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#tabInfo');
-                var $name = $('span', $info);
-
-                $name.text($tab.text());
-
-                $info.show();
-            }
-        });
-    });
-</script>
 </head>
 <body>
 <header>
@@ -132,8 +114,11 @@
                                 <p>13/03/2011</p>
                             </div>
                             <div class="para-statement-alt">
-                                <p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <article>
+                                    <p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                </article>
                             </div>
                         </div>
                     </div>
@@ -152,8 +137,7 @@
         <div id="moneyRaised"></div>
         <div id="moneyNeed"></div>
         <br />
-        <span id="noDonated"></span>
-        <span>donated</span>
+        <span id="noDonated"></span> <span>donated</span>
         <h2>Raising money for</h2>
         <a href="http://www.childrensociety.org.sg/"><img src="http://upload.wikimedia.org/wikipedia/en/c/cb/Placeholder_logo.png" style="width:85px;height:85px; alt="Singapore's Children Society" "></a>
         <h4>Singapore Children's Society</h4>
@@ -169,12 +153,39 @@ var money_needed = 10000; //targeted donation amounts
 var total=arrRaised.reduce(function(pv, cv) { return pv + cv; }, 0); //calculate sum of elements of arrRaised (optimised algorithm)
 var percentage=total/money_needed*100; // calc percentage
 
+document.getElementById("moneyRaised").innerHTML = '$' + total.toFixed(2);
+document.getElementById("noDonated").innerHTML = arrRaised.length;
+document.getElementById("moneyNeed").innerHTML = 'of $ ' + money_needed.toFixed(2) +' raised';
+
+//mambo.js plugin
+
 $(".percentage").mambo({ //mambo plugin function
   percentage: percentage.toFixed(0) //rounds up percentage
 });
 
-document.getElementById("moneyRaised").innerHTML = '$' + total.toFixed(2);
-document.getElementById("noDonated").innerHTML = arrRaised.length;
-document.getElementById("moneyNeed").innerHTML = 'of $ ' + money_needed.toFixed(2) +' raised';
+//Readmore.js
+$('article').readmore({
+  speed: 75,
+  maxHeight: 230
+});
+
+//easy responsive accordions
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: '700px', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+
+                $name.text($tab.text());
+
+                $info.show();
+            }
+        });
+    });
 </script>
 </html>
