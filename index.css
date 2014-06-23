@@ -1,52 +1,52 @@
 
 * {
-    font-family: Segoe UI;
+    font-family: Segoe UI
 }
 
 body {
-    background-color: #ecf0f1;
     margin: 0 auto;
+    background: #ecf0f1
 }
 
 .content {
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 #index {
-    float: right;
+    float: right
 }
 
 #logoDiv {
     height: 50px;
-    width: 300px;
+    width: 300px
 }
 
 #logo {
     height: 70px;
-    width: auto;
+    width: auto
 }
 
 header {
     height: 70px;
-    background-color: #2c3e50;
+    background: #2c3e50
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 #tracker {
     float: right;
     width: 23%;
-    height: auto;
+    height: auto
 }
 
 #statements {
     width: 72%;
     height: 100%;
     overflow: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 50px
 }
 
 footer {
@@ -54,64 +54,50 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 50px;   /* Height of the footer */
-    background: #2c3e50;
+    height: 50px
 }
 
 h1, h3, h5 {
-    margin-left: 2%;
+    margin-left: 2%
 }
 
 #charityLogo {
     width: 150px;
-    height: auto;
-}
-
-#percentage {
-    font-size: 30px;
-}
-
-#moneyRaised {
-    font-size: 30px;
-}
-
-#noDonated {
-    font-size: 30px;
+    height: auto
 }
 
 #moneyNeed {
-    margin-left: 1px;
+    margin-left: 1px
 }
 
 .para-statement {
     margin-left: 160px;
-    border-left: 1px solid #106ba6;
+    border-left: 1px solid #106ba6
 }
 
 .para-statement-alt {
     margin-left: 160px;
-    border-left: 1px solid #2980b9;
+    border-left: 1px solid #2980b9
 }
 
 .para {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .para-alt {
     width: 100%;
     overflow: hidden;
-    background-color: #106ba6;
+    background: #106ba6
 }
 
 .para-profile {
     width: 160px;
-    float: left;
+    float: left
 }
 
 .para p, .para-alt p {
-    margin-left: 24px;
-    margin: 20px;
+    margin: 20px
 }
 
 .avatar {
@@ -120,30 +106,30 @@ h1, h3, h5 {
     display: block;
     height: 70px;
     width: 70px;
-    margin-left: 24px;
+    margin-left: 24px
 }
 
 .avatar img {
     border: 5px solid transparent;
-    border-radius: 45px; /* must be width + border */
+    border-radius: 45px;
     width: 60px;
-    height: 60px;
+    height: 60px
 }
 
 img:hover {
-    opacity: 0.8;
+    opacity: 0.8
 }
 
 section > section {
-    float: left;
+    float: left
 }
 
 .readmore-js-toggle {
     padding-bottom: 1.5em;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     margin-left: 20px;
-    padding-top: 5px;
+    padding-top: 5px
 }
 
 .donate {
@@ -151,19 +137,23 @@ section > section {
     display: block;
     width: 125px;
     height: 25px;
-    background: #1ECD97;
-    padding: 10px;
     text-align: center;
     border-radius: 40px;
-    color: white;
-    font-weight: bold;
+    color: #FFF;
+    font-weight: 700;
+    background: #1ECD97;
     text-decoration: none;
+    padding: 10px
+    
 }
 
 .donate:hover {
-    background: #179A71;
     -o-transition: .35s;
     -ms-transition: .35s;
     -moz-transition: .35s;
     -webkit-transition: .35s
+}
+
+#percentage, #moneyRaised, #noDonated {
+    font-size: 30px
 }
