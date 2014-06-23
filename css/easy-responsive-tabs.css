@@ -98,36 +98,32 @@ h2.resp-tab-title:last-child {
     border-bottom: 12px solid #2980b9!important;
     background: blue
 }
- @media only screen and max-width 1150px {
+/*n change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and max-width 1150px {
 .demo {
-    width:100%;
-    margin:2%
-}
- .how-use {
-    float:left;
-    width:300px;
-    display:none
+width:100%;
+margin:2%
 }
  ul.resp-tabs-list {
-    display:none
+display:none
 }
  h2.resp-accordion {
-    display:block
+display:block
 }
  .resp-vtabs .resp-tab-content {
-    border:1px solid #2980b9
+border:1px solid #2980b9
 }
  .resp-vtabs .resp-tabs-container {
-    border:none;
-    float:none;
-    width:100%;
-    min-height:initial;
-    clear:none
+border:none;
+float:none;
+width:100%;
+min-height:initial;
+clear:none
 }
  .resp-accordion-closed {
-    display:none!important
+display:none!important
 }
  .resp-vtabs .resp-tab-content:last-child {
-    border-bottom:1px solid #2980b9!important
+border-bottom:1px solid #2980b9!important
 }
 }
