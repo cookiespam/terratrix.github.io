@@ -1,9 +1,8 @@
 ﻿
 .demo {
     width: 700px;
-    margin: 0 auto;
-    margin-left: 2%;
     background-color: #3498db;
+    margin: 0 auto 0 2%;
 }
 
 .demo h1 {
@@ -18,36 +17,20 @@ pre {
     background: #fff;
 }
 
-@media only screen and (max-width: 1150px) {
-
-.demo {
-    margin: 2%;
-    width: 100%;
-}
-
-.how-use {
-    float: left;
-    width: 300px;
-    display: none;
-}
-}
-
 #tabInfo {
     display: none;
 }
 
 ul.resp-tabs-list, p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .resp-tabs-list li {
     font-weight: 600;
-    color: white;
+    color: #FFF;
     font-size: 20px;
     display: inline-block;
-    padding: 12px 15px;
-    margin: 0;
     list-style: none;
     cursor: pointer;
     float: left;
@@ -55,6 +38,8 @@ ul.resp-tabs-list, p {
     text-align: center;
     height: 35px;
     vertical-align: middle;
+    margin: 0;
+    padding: 12px 15px;
 }
 
 span {
@@ -62,96 +47,87 @@ span {
 }
 
 .resp-tabs-container {
-    padding: 0px;
     clear: left;
     width: 100%;
     background-color: #2980b9;
-    color: white;
+    color: #FFF;
+    padding: 0;
 }
 
 h2.resp-accordion {
     cursor: pointer;
-    padding: 5px;
     display: none;
+    font-size: 13px;
+    border-left: 1px solid #2980b9;
+    border-right: 1px solid #2980b9;
+    border-top: 1px solid #2980b9;
+    border-bottom: 1px solid #2980b9!important;
+    background-color: #3498db;
+    margin: 0;
+    padding: 10px 15px;
 }
 
 .resp-tab-content {
     display: none;
     overflow: auto;
+    border: 1px solid #2980b9;
+    border-bottom: 1px solid #2980b9!important;
+    width: 99.7%;
 }
 
 .resp-tab-active {
     border: 1px solid #2980b9;
-    border-bottom: 1px solid #2980b9 !important;
-    margin-bottom: -1px !important;
-    padding: 12px 14px 14px 14px !important;
-}
-
-.resp-tab-active {
+    border-bottom: 1px solid #2980b9!important;
+    margin-bottom: -1px!important;
     background-color: #2980b9;
+    padding: 12px 14px 14px!important;
 }
 
 .resp-content-active, .resp-accordion-active {
     display: block;
 }
 
-.resp-tab-content {
-    border: 1px solid #2980b9;
-    border-bottom: 1px solid #2980b9 !important;
-    width: 99.7%;
-}
-
-h2.resp-accordion {
-    font-size: 13px;
-    border-left: 1px solid #2980b9;
-    border-right: 1px solid #2980b9;
-    border-top: 1px solid #2980b9;
-    margin: 0px;
-    border-bottom: 1px solid #2980b9!important;
-    padding: 10px 15px;
-    background-color: #3498db;
-}
-
 h2.resp-tab-active {
-    border-bottom: 0px solid #2980b9 !important;
-    margin-bottom: 0px !important;
-    padding: 10px 15px !important;
+    border-bottom: 0 solid #2980b9!important;
+    margin-bottom: 0!important;
     background-color: #2980b9;
+    padding: 10px 15px!important;
 }
 
 h2.resp-tab-title:last-child {
-    border-bottom: 12px solid #2980b9 !important;
+    border-bottom: 12px solid #2980b9!important;
     background: blue;
 }
-
-/*n change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 1150px) {
-
-ul.resp-tabs-list {
-    display: none;
+ @media only screen and max-width 1150px {
+.demo {
+    width:100%;
+    margin:2%;
 }
-
-h2.resp-accordion {
-    display: block;
+ .how-use {
+    float:left;
+    width:300px;
+    display:none;
 }
-
-.resp-vtabs .resp-tab-content {
-    border: 1px solid #2980b9;
+ ul.resp-tabs-list {
+    display:none;
 }
-
-.resp-vtabs .resp-tabs-container {
-    border: none;
-    float: none;
-    width: 100%;
-    min-height: initial;
-    clear: none;
+ h2.resp-accordion {
+    display:block;
 }
-
-.resp-accordion-closed {
-    display: none !important;
+ .resp-vtabs .resp-tab-content {
+    border:1px solid #2980b9;
 }
-
-.resp-vtabs .resp-tab-content:last-child {
-    border-bottom: 1px solid #2980b9 !important;
+ .resp-vtabs .resp-tabs-container {
+    border:none;
+    float:none;
+    width:100%;
+    min-height:initial;
+    clear:none;
+}
+ .resp-accordion-closed {
+    display:none!important;
+}
+ .resp-vtabs .resp-tab-content:last-child {
+border-bottom:1px solid #2980b9!important;
 }
 }
