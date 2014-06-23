@@ -1,29 +1,29 @@
 ﻿
 .demo {
     width: 700px;
-    background-color: #3498db;
     margin: 0 auto 0 2%;
+    background: #3498db
 }
 
 .demo h1 {
-    margin: 33px 0 25px;
+    margin: 33px 0 25px
 }
 
 .demo h3 {
-    margin: 10px 0;
+    margin: 10px 0
 }
 
 pre {
-    background: #fff;
+    background: #fff
 }
 
 #tabInfo {
-    display: none;
+    display: none
 }
 
 ul.resp-tabs-list, p {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .resp-tabs-list li {
@@ -39,19 +39,19 @@ ul.resp-tabs-list, p {
     height: 35px;
     vertical-align: middle;
     margin: 0;
-    padding: 12px 15px;
+    padding: 12px 15px
 }
 
 span {
-    line-height: 40px;
+    line-height: 40px
 }
 
 .resp-tabs-container {
     clear: left;
     width: 100%;
-    background-color: #2980b9;
     color: #FFF;
     padding: 0;
+    background: #2980b9
 }
 
 h2.resp-accordion {
@@ -62,9 +62,9 @@ h2.resp-accordion {
     border-right: 1px solid #2980b9;
     border-top: 1px solid #2980b9;
     border-bottom: 1px solid #2980b9!important;
-    background-color: #3498db;
     margin: 0;
     padding: 10px 15px;
+    background: #3498db
 }
 
 .resp-tab-content {
@@ -72,62 +72,62 @@ h2.resp-accordion {
     overflow: auto;
     border: 1px solid #2980b9;
     border-bottom: 1px solid #2980b9!important;
-    width: 99.7%;
+    width: 99.7%
 }
 
 .resp-tab-active {
     border: 1px solid #2980b9;
     border-bottom: 1px solid #2980b9!important;
     margin-bottom: -1px!important;
-    background-color: #2980b9;
     padding: 12px 14px 14px!important;
+    background: #2980b9
 }
 
 .resp-content-active, .resp-accordion-active {
-    display: block;
+    display: block
 }
 
 h2.resp-tab-active {
     border-bottom: 0 solid #2980b9!important;
     margin-bottom: 0!important;
-    background-color: #2980b9;
     padding: 10px 15px!important;
+    background: #2980b9
 }
 
 h2.resp-tab-title:last-child {
     border-bottom: 12px solid #2980b9!important;
-    background: blue;
+    background: blue
 }
  @media only screen and max-width 1150px {
 .demo {
     width:100%;
-    margin:2%;
+    margin:2%
 }
  .how-use {
     float:left;
     width:300px;
-    display:none;
+    display:none
 }
  ul.resp-tabs-list {
-    display:none;
+    display:none
 }
  h2.resp-accordion {
-    display:block;
+    display:block
 }
  .resp-vtabs .resp-tab-content {
-    border:1px solid #2980b9;
+    border:1px solid #2980b9
 }
  .resp-vtabs .resp-tabs-container {
     border:none;
     float:none;
     width:100%;
     min-height:initial;
-    clear:none;
+    clear:none
 }
  .resp-accordion-closed {
-    display:none!important;
+    display:none!important
 }
  .resp-vtabs .resp-tab-content:last-child {
-border-bottom:1px solid #2980b9!important;
+    border-bottom:1px solid #2980b9!important
 }
 }
