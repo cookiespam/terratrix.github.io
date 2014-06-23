@@ -159,3 +159,11 @@ section > section {
     font-weight: bold;
     text-decoration: none;
 }
+
+.donate:hover {
+    background: #179A71;
+    -o-transition: .35s;
+    -ms-transition: .35s;
+    -moz-transition: .35s;
+    -webkit-transition: .35s
+}
