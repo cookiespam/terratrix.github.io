@@ -149,7 +149,7 @@ section > section {
 .donate {
     margin-left: 4px;
     display: block;
-    width: 115px;
+    width: 125px;
     height: 25px;
     background: #1ECD97;
     padding: 10px;
@@ -158,5 +158,4 @@ section > section {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid #1ECD97;
 }
