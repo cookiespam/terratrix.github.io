@@ -158,3 +158,29 @@ section > section {
 #percentage, #moneyRaised, #noDonated {
     font-size: 30px
 }
+
+.morelink {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    float:right;
+    display: block;
+    width: 95px;
+    height: 25px;
+    text-align: center;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    background: #1ECD97;
+    text-decoration: none;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.morelink:hover {
+    background: #179A71;
+    -o-transition: .35s;
+    -ms-transition: .35s;
+    -moz-transition: .35s;
+    -webkit-transition: .35s
+}
