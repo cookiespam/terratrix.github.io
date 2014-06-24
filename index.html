@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="jquery.mambo.min.js"></script>
-<script src="readmore.min.js"></script>
+<script src="src/jquery.shorten.js"></script>
 <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
 </head>
 <body>
@@ -115,11 +115,9 @@
                                 <p>13/03/2011</p>
                             </div>
                             <div class="para-statement-alt">
-                                <article>
                                     <p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit.
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </article>
                             </div>
                         </div>
                     </div>
@@ -167,9 +165,10 @@ $(".percentage").mambo({ //mambo plugin function
 });
 
 //Readmore.js
-$('article').readmore({
-  speed: 75,
-  maxHeight: 230
+$('p').shorten({
+    moreText: 'Read more',
+    lessText: 'Read less',
+    showChars: '700'
 });
 
 //easy responsive accordions
