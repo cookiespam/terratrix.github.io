@@ -172,9 +172,7 @@ section > section {
     font-weight: 700;
     background: #1ECD97;
     text-decoration: none;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px
+    padding: 8px 10px 6px 10px
 }
 
 .morelink:hover {

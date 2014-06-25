@@ -42,10 +42,6 @@ ul.resp-tabs-list, p {
     padding: 12px 15px
 }
 
-span {
-    line-height: 40px
-}
-
 .resp-tabs-container {
     clear: left;
     width: 100%;
