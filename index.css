@@ -29,7 +29,7 @@ body {
 
 header {
     height: 70px;
-    background: #2c3e50
+    background: #e91e63  
 }
 
 header a {
@@ -55,7 +55,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background: #2c3e50
+    background: #009688
 }
 
 h1, h3, h5 {
@@ -73,12 +73,12 @@ h1, h3, h5 {
 
 .para-statement {
     margin-left: 160px;
-    border-left: 1px solid #106ba6
+    border-left: 1px solid #1a237e
 }
 
 .para-statement-alt {
     margin-left: 160px;
-    border-left: 1px solid #2980b9
+    border-left: 1px solid #3f51b5
 }
 
 .para {
@@ -89,7 +89,7 @@ h1, h3, h5 {
 .para-alt {
     width: 100%;
     overflow: hidden;
-    background: #106ba6
+    background: #1a237e
 }
 
 .para-profile {
@@ -125,14 +125,6 @@ section > section {
     float: left
 }
 
-.readmore-js-toggle {
-    padding-bottom: 1.5em;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 20px;
-    padding-top: 5px
-}
-
 .donate {
     margin-left: 4px;
     display: block;
@@ -142,13 +134,13 @@ section > section {
     border-radius: 40px;
     color: #FFF;
     font-weight: 700;
-    background: #1ECD97;
+    background: #1de9b6;
     text-decoration: none;
     padding: 10px
 }
 
 .donate:hover {
-    background: #179A71;
+    background: #00bfa5;
     -o-transition: .35s;
     -ms-transition: .35s;
     -moz-transition: .35s;
@@ -170,13 +162,13 @@ section > section {
     border-radius: 40px;
     color: #FFF;
     font-weight: 700;
-    background: #1ECD97;
+    background: #fb8c00;
     text-decoration: none;
     padding: 8px 10px 6px 10px
 }
 
 .morelink:hover {
-    background: #179A71;
+    background: #e65100;
     -o-transition: .35s;
     -ms-transition: .35s;
     -moz-transition: .35s;
