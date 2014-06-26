@@ -1,6 +1,6 @@
 
 * {
-    font-family: Segoe UI
+    font-family: Century Gothic
 }
 
 body {
@@ -129,7 +129,7 @@ section > section {
     margin-left: 4px;
     display: block;
     width: 125px;
-    height: 24px;
+    height: 22px;
     text-align: center;
     border-radius: 40px;
     color: #FFF;
@@ -157,7 +157,7 @@ section > section {
     float: right;
     display: block;
     width: 95px;
-    height: 25px;
+    height: 23px;
     text-align: center;
     border-radius: 40px;
     color: #FFF;
