@@ -29,7 +29,7 @@ body {
 
 header {
     height: 70px;
-    background: #e91e63  
+    background: #e91e63
 }
 
 header a {
@@ -102,7 +102,7 @@ h1, h3, h5 {
 }
 
 .avatar {
-    border: 4px solid #009AFF;
+    border: 4px solid #303f9f;
     border-radius: 45px;
     display: block;
     height: 70px;
