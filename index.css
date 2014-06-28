@@ -68,7 +68,12 @@ h1, h3, h5 {
 }
 
 #moneyNeed {
-    margin-left: 1px
+    margin-left: 25px
+}
+
+#percentage, #moneyRaised, #noDonated {
+    font-size: 30px;
+    margin-left: 22px
 }
 
 .para-statement {
@@ -126,7 +131,6 @@ section > section {
 }
 
 .donate {
-    margin-left: 4px;
     display: block;
     width: 125px;
     height: 22px;
@@ -136,7 +140,8 @@ section > section {
     font-weight: 700;
     background: #1de9b6;
     text-decoration: none;
-    padding: 10px
+    padding: 10px;
+    margin-left:25px;
 }
 
 .donate:hover {
@@ -147,9 +152,6 @@ section > section {
     -webkit-transition: .35s
 }
 
-#percentage, #moneyRaised, #noDonated {
-    font-size: 30px
-}
 
 .morelink {
     margin-top: 7px;
