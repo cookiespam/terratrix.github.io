@@ -9,7 +9,6 @@ body {
 }
 
 .content {
-    max-width: 1050px;
     margin: 0 auto
 }
 
@@ -35,18 +34,13 @@ header {
 header a {
     text-decoration: none
 }
-
 #tracker {
-    float: right;
-    width: 23%;
-    height: auto
+    overflow:hidden;
+    width:auto
 }
 
-#statements {
-    width: 72%;
-    height: 100%;
-    overflow: hidden;
-    padding-bottom: 50px
+.container{
+    overflow: hidden
 }
 
 footer {
@@ -68,12 +62,12 @@ h1, h3, h5 {
 }
 
 #moneyNeed {
-    margin-left: 25px
+    margin-left: 25px;
 }
 
 #percentage, #moneyRaised, #noDonated {
     font-size: 30px;
-    margin-left: 22px
+    margin-left: 22px;
 }
 
 .para-statement {
@@ -124,10 +118,6 @@ h1, h3, h5 {
 
 img:hover {
     opacity: 0.8
-}
-
-section > section {
-    float: left
 }
 
 .donate {
