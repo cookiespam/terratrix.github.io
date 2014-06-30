@@ -35,9 +35,8 @@ ul.resp-tabs-list, p {
     width: 29%;
     text-align: center;
     height: 25px;
-    margin: 0;
+    margin: 3px 0 0;
     padding: 12px 15px;
-    margin-top: 3px
 }
 
 .resp-tabs-container {
@@ -87,7 +86,7 @@ h2.resp-tab-active {
 
 .demo {
     width: 100%;
-    overflow:none
+    overflow: none
 }
 
 ul.resp-tabs-list {
