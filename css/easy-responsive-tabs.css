@@ -1,6 +1,5 @@
 
 .demo {
-    margin: 0 auto;
     background: #3f51b5
 }
 
@@ -88,6 +87,7 @@ h2.resp-tab-active {
 
 .demo {
     width: 100%;
+    overflow:none
 }
 
 ul.resp-tabs-list {
