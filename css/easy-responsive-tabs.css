@@ -82,7 +82,7 @@ h2.resp-tab-active {
 }
 
 /*n change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 756px) {
 
 .demo {
     width: 100%;

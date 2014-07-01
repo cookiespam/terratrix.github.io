@@ -21,8 +21,8 @@
         <h1 style="margin-left:28px">Current Status</h1>
         <br />
         <canvas style ="float:left;" id="percentage" width="180" height="180"></canvas><div class="container">
-        <div id="moneyRaised"></div>
-        <div id="moneyNeed"></div>
+        <span id="moneyRaised"></span><br />
+        <span id="moneyNeed"></span><br />
         <span id="noDonated"></span> <span>donated</span> <br />
         <br />
         <a class="donate" href="">Donate Now</a> <br /></div>
@@ -140,11 +140,12 @@ var arrRaised=[28,61,93,143,45,12,69,234,23.33,23,23,42,531,75,98,85,1000]; //st
 var money_needed = 10000; //targeted donation amounts
 /*-----------------------*/
 var total=arrRaised.reduce(function(pv, cv) { return pv + cv; }, 0); //calculate sum of elements of arrRaised (optimised algorithm)
-var percentage=total/money_needed*100; // calc percentage
+var percentage=total/money_needed*100;
+//calc percentage
 
 document.getElementById("moneyRaised").innerHTML = '$' + total.toFixed(2);
 document.getElementById("noDonated").innerHTML = arrRaised.length;
-document.getElementById("moneyNeed").innerHTML = 'of $ ' + money_needed.toFixed(2) +' raised';
+document.getElementById("moneyNeed").innerHTML = 'of $' + money_needed.toFixed(2) +'raised';
 
 //mambo.js plugin
 
