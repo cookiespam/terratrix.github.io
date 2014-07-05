@@ -31,7 +31,7 @@ body {
 div.wrap { width: 960px; margin: 0 auto; height:auto }
 /* header */
 	#logo img{ height: 70px; width: 70px; }
-	header {	height: 130px; width: 100%;	padding: 20px;background-color: #2d2d2d; }
+	header {	height: 130px; width: 100%;	padding-bottom: 20px;background-color: #2d2d2d; }
 	header div#logo { float: left; }
 	
 	nav { position: relative; float: right; margin-top: 12.5%; font-size: 14px; }
