@@ -8,20 +8,18 @@
 </head>
 <body>
 <header>
-	<div class="wrap">
-		<div id="logo">
-			<img src="placeholder.png">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Our Services</a></li>
-				<li><a href="#">Campaigns</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</div>
+    <div class="wrap">
+        <div id="logo"> <img src="placeholder.png"> </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Campaigns</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <br />
 <section class="content">
@@ -30,12 +28,17 @@
     <section id="tracker">
         <h1 style="margin-left:28px">Current Status</h1>
         <br />
-        <canvas style ="float:left;" id="percentage" width="180" height="180"></canvas><div class="container">
-        <span id="moneyRaised"></span><br />
-        <span id="moneyNeed"></span><br />
-        <span id="noDonated"></span> <span>donated</span> <br />
-        <br />
-        <a class="donate" href="">Donate Now</a> <br /></div>
+        <div class="contain1">
+            <canvas style ="float:left;" id="percentage" width="180" height="180"></canvas>
+            <div class="container"> <span id="moneyRaised"></span><br />
+                <span id="moneyNeed"></span><br />
+                <span id="noDonated"></span> <span>donated</span> <br />
+                <br />
+                <a class="donate" href="">Donate Now</a> <br />
+            </div>
+        </div>
+        <div class="contain2"> </div>
+        <div class="contain3"> </div>
         <hr />
         <h2 style="margin-left:28px">Raising money for</h2>
         <a href="http://www.childrensociety.org.sg/"><img src="placeholder.png" style="width:100px;height:100px;margin-left:30px;float:left;padding-right:20px;" alt="Singapore's Children Society"></a>
@@ -54,41 +57,64 @@
                 </ul>
                 <div class="resp-tabs-container">
                     <div>
-                        <div class="para">
-                            <div class="para-profile">
-                                <p>Umut Bulut</p>
-                                <p>13/03/2011</p>
-                                
+                        <div class="contain1">
+                            <div class="para">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
                             </div>
-                            <div class="para-statement">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <div class="para-alt">
-                            <div class="para-profile">
-                                <p>Umut Bulut</p>
-                                <p>13/03/2011</p>
-                            </div>
-                            <div class="para-statement-alt">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <div class="para">
-                            <div class="para-profile">
-                                <p>Umut Bulut</p>
-                                <p>13/03/2011</p>
-                            </div>
-                            <div class="para-statement">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="para-alt">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement-alt">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="para-alt">
-                            <div class="para-profile">
-                                <p>Umut Bulut</p>
-                                <p>13/03/2011</p>
+                        <div class="contain2">
+                            <div class="para">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
                             </div>
-                            <div class="para-statement-alt">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="para-alt">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement-alt">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain3">
+                            <div class="para">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="para-alt">
+                                <div class="para-profile">
+                                    <p>Umut Bulut</p>
+                                    <p>13/03/2011</p>
+                                </div>
+                                <div class="para-statement-alt">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,25 +166,26 @@
     </section>
 </section>
 <footer>
-	<div class="wrap">
-		<div class="social">
-			<ul>
-				<li><a href="#" class="icon-button twitter"><span class="icon-twitter"></span></a></li>
-				<li><a href="#" class="icon-button facebook"><span class="icon-facebook"></span></a></li>
-				<li><a href="#" class="icon-button instagram"><span class="icon-instagram"></span></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-		<div class="copyright">
-			<p>&copy; Copyright 2014 - Team Toilet. All Rights Reserved.<br />
-			For project purposes only.</p></div>
-		<div class="misc">
-			<ul>
-				<li><a href="#">Disclaimer</a></li>
-				<li><a href="#">Terms of Service</a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="wrap">
+        <div class="social">
+            <ul>
+                <li><a href="#" class="icon-button twitter"><span class="icon-twitter"></span></a></li>
+                <li><a href="#" class="icon-button facebook"><span class="icon-facebook"></span></a></li>
+                <li><a href="#" class="icon-button instagram"><span class="icon-instagram"></span></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="copyright">
+            <p>&copy; Copyright 2014 - Team Toilet. All Rights Reserved.<br />
+                For project purposes only.</p>
+        </div>
+        <div class="misc">
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
@@ -187,7 +214,7 @@ $("#percentage").mambo({ //mambo plugin function
 $('p').shorten({
     moreText: 'Read more',
     lessText: 'Read less',
-    showChars: '700', 
+    showChars: '400', 
 });
 
 //easy responsive accordions
