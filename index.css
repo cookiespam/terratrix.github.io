@@ -19,13 +19,15 @@
 	}
     
 body {
-    margin: auto;
+    margin:0 auto;
     background: #f9f9f9;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .content {
-    margin: auto
+    margin: 0 auto;
+    width:960px
 }
 
 div.wrap { width: 960px; margin: 0 auto; height:auto }
@@ -43,26 +45,26 @@ div.wrap { width: 960px; margin: 0 auto; height:auto }
 /* end */
 #tracker {
     overflow: hidden;
-    width: auto
+    width: auto;
+    margin: 0 auto
 }
 
 .container {
-    overflow: hidden
+    overflow: hidden;
+    
 }
 
 .contain1{
     float: left; 
-    width: 33.3%;
+    width: 50%;
+    color:black
 }
 .contain2{
     float: left; 
-    width: 33.3%;
+    width: 50%;
+    color:black
 }
-.contain3{
-    float: left; 
-    width: 33.3%;
 
-}
 h1, h3, h5 {
     margin-left: 28px;
 }
