@@ -51,9 +51,11 @@ div.wrap { width: 960px; margin: 0 auto; height:auto }
 
 .container {
     overflow: hidden;
-    
 }
 
+.content{
+    width:960px;
+}
 .contain1{
     float: left; 
     width: 50%;
