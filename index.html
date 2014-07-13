@@ -40,15 +40,17 @@
             <canvas style ="float:left;" id="percentage" width="180" height="180"></canvas>
             <div class="container"> <span id="moneyRaised"></span><br />
                 <span id="moneyNeed"></span><br />
-                <span id="noDonated"></span> <span>donated</span> <br />
+                <span id="noDonated"></span> <span>donated</span> 
                 <br />
-                <a class="donate" href="">Donate Now</a> <br />
+                			<div class="donate">
+				<a href="#">Donate now</a>
+			</div> <br />
             </div>
         </div>
         <div class="contain2">
-            <h5 style="margin-left:30px;margin-top:-5px;">Singapore Children's Society</h5>
-            <a href="http://www.childrensociety.org.sg/"><img src="placeholder.png" style="width:100px;height:100px;margin-left:30px;float:left;padding-right:20px;" alt="Singapore's Children Society"></a>
-            <p style="font-size:14px;padding-bottom:40px;margin-left:50px;text-align:left">Singapore Children's Society protects and nurtures children and youth of all races and religions. In 2013, the Society reached out to 72,640 children, youth and families in need. Established in 1952, its services have evolved<br> to meet the changing needs of children.</p>
+            <p style="margin-left:30px;margin-top:6px;font-weight:600 ">Singapore Children's Society</p>
+            <a href="http://www.childrensociety.org.sg/"><img src="placeholder.png" style="width:100px;height:100px;margin-left:30px;float:left;padding-right:20px;margin-top:18px" alt="Singapore's Children Society"></a>
+            <p style="font-size:14px;padding-bottom:40px;margin-left:50px;text-align:left;margin-top:14px">Singapore Children's Society protects and nurtures children and youth of all races and religions. In 2013, the Society reached out to 72,640 children, youth and families in need. Established in 1952, its services have evolved<br> to meet the changing needs of children.</p>
         </div>
     </section>
     <section id="statements">
@@ -102,7 +104,6 @@
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="jquery.mambo.min.js"></script>
 <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
-<script src="src/jquery.shorten.js"></script>
 <script>
 var arrRaised=[28,61,93,143,45,12,69,234,23.33,23,23,42,531,75,98,85,1000]; //stores donated amounts,
 var money_needed = 10000; //targeted donation amounts
@@ -121,12 +122,7 @@ $("#percentage").mambo({ //mambo plugin function
     percentage: percentage.toFixed(0) //rounds up percentage
 });
 
-//jquery.shorten
-$('p').shorten({
-    moreText: 'Read more',
-    lessText: 'Read less',
-    showChars: '400', 
-});
+
 
 //easy responsive accordions
     $(document).ready(function () {

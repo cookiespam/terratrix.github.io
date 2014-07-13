@@ -38,15 +38,15 @@ ul.resp-tabs-list, p {
     height: 25px;
     margin: 3px 0 0;
     padding: 12px 15px;
-    background: #3f51b5;
+    background-color: #3f51b5;
     border-bottom: 5px solid #3f51b5;
 }
 
 iframe {
-    min-height: 507px;
+    min-height: 700px;
     height: auto;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
     border: 0;
     margin: 0;
     padding: 0
@@ -97,7 +97,7 @@ h2.resp-tab-active {
 @media only screen and (max-width: 756px) {
 
 iframe {
-    height: 520px;
+    height: 700px;
     width: 100%;
     overflow: hidden;
     border: 0;

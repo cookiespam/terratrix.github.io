@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>quickPager - easy jQuery paging plugin</title>
-<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="quickpager.jquery.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-
-$(document).ready(function() {	
-	$("ul.paging").quickPager();
-});
-
-/* ]]> */
-</script>
+<title></title>
 <style type="text/css">
 body {
-    border:0;
-    margin:0;
-    padding:0;
-    height:auto
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow:hidden
 }
 
 ul {
     clear: both;
     margin: 0 auto;
     padding: 0;
-    height:auto;
+    height: auto;
 }
 
-ul.paging{
+ul.paging {
     font-family: Open Sans;
     color: #fff;
     line-height: 1;
@@ -46,7 +35,7 @@ ul.simplePagerNav li {
     float: left;
     padding: 3px;
     margin: 0;
-    margin-top:-5px;
+    margin-top: -5px;
 }
 
 ul.simplePagerNav li a {
@@ -60,7 +49,7 @@ li.currentPage {
 
 ul.simplePagerNav li.currentPage a {
     color: black;
-    font-weight:bold
+    font-weight: bold
 }
 
 .para-statement {
@@ -76,7 +65,7 @@ ul.simplePagerNav li.currentPage a {
 .para {
     width: 100%;
     overflow: hidden;
-    background:#3f51b5
+    background: #3f51b5
 }
 
 .para-alt {
@@ -115,23 +104,20 @@ img:hover {
 }
 
 .morelink {
-    margin-top: 7px;
-    margin-bottom: 10px;
-    float: right;
-    display: block;
-    width: 95px;
-    height: 23px;
-    text-align: center;
-    border-radius: 40px;
-    color: #FFF;
-    font-weight: 700;
-    background: #fb8c00;
+    padding: 7px 15px;
+    background-color: #93c054;
+    color: #f1f1f1;
+    font-size: 16px;
     text-decoration: none;
-    padding: 8px 10px 6px
+    font-weight: 600;
+    border-radius: 2px;
+    margin-left: 30px;
+    float: right;
+    margin-bottom: 7px;
 }
 
 .morelink:hover {
-    background: #e65100;
+    background-color: #7FA649;
     -o-transition: .35s;
     -ms-transition: .35s;
     -moz-transition: .35s;
@@ -148,7 +134,7 @@ img:hover {
             <p>13/03/2011</p>
         </div>
         <div class="para-statement">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
     <div class="para-alt">
@@ -252,4 +238,25 @@ img:hover {
     </div>
 </ul>
 </body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="quickpager.jquery.js"></script>
+<script src="src/jquery.shorten.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+$(document).ready(function() {	
+	$("ul.paging").quickPager();
+});
+
+/* ]]> */
+//jquery.shorten
+$('p').shorten({
+    moreText: 'More',
+    lessText: 'Less',
+    showChars: '450', 
+});
+
+
+
+</script>
 </html>
