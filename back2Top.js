@@ -1,5 +1,5 @@
 	// JavaScript back2Top function
-	
+	$("#back2Top").hide();
 	var timeOut;
 	function scrollToTop() {
 	  if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
@@ -8,3 +8,4 @@
 	  }
 	  else clearTimeout(timeOut);
 	}
+    
