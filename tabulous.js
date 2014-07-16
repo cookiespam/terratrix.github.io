@@ -30,15 +30,9 @@
             var firstchild = this.$elem.find('li:first-child').find('a');
             var lastchild = this.$elem.find('li:last-child').after('<span class="tabulousclear"></span>');
 
-            if (this.options.effect == 'scale') {
-             tab_content = this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hidescale');
-            } else if (this.options.effect == 'slideLeft') {
+            if (this.options.effect == 'slideLeft') {
                  tab_content = this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hideleft');
-            } else if (this.options.effect == 'scaleUp') {
-                 tab_content = this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hidescaleup');
-            } else if (this.options.effect == 'flip') {
-                 tab_content = this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hideflip');
-            }
+            } 
 
             var firstdiv = this.$elem.find('#tabs_container');
             var firstdivheight = firstdiv.find('div:first').height();
@@ -68,18 +62,9 @@
                 mythis.addClass('tabulous_active');
                 thisdivwidth = thisform.find('div'+thislink).height();
 
-                if (effect == 'scale') {
-                    alldivs.removeClass('showscale').addClass('make_transist').addClass('hidescale');
-                    thisform.find('div'+thislink).addClass('make_transist').addClass('showscale');
-                } else if (effect == 'slideLeft') {
+                if (effect == 'slideLeft') {
                     alldivs.removeClass('showleft').addClass('make_transist').addClass('hideleft');
                     thisform.find('div'+thislink).addClass('make_transist').addClass('showleft');
-                } else if (effect == 'scaleUp') {
-                    alldivs.removeClass('showscaleup').addClass('make_transist').addClass('hidescaleup');
-                    thisform.find('div'+thislink).addClass('make_transist').addClass('showscaleup');
-                } else if (effect == 'flip') {
-                    alldivs.removeClass('showflip').addClass('make_transist').addClass('hideflip');
-                    thisform.find('div'+thislink).addClass('make_transist').addClass('showflip');
                 }
 
 
