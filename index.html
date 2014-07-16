@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Wireframe</title>
 <link rel="stylesheet" type="text/css" href="index.css"/>
-<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
+<link href='tabulous.css' rel='stylesheet' type='text/css'>
 <link rel="prefetch" href="individuals.html">
 <link rel="prefetch" href="corporates.html">
 <link rel="prefetch" href="organizations.html">
@@ -55,27 +55,28 @@
     </section>
     <section id="statements">
         <h5>Select one of the boxes below to find out more about the donators</h5>
-        <div class="demo"> 
-            <!--Horizontal Tab-->
-            <div id="horizontalTab">
-                <ul class="resp-tabs-list">
-                    <li><span>Individuals</span></li>
-                    <li><span>Corporates</span></li>
-                    <li><span>Organisations</span></li>
-                </ul>
-                <div class="resp-tabs-container">
-                    <div>
-                        <iframe src="individuals.html"></iframe>
-                    </div>
-                    <div>
-                        <iframe src="corporates.html"></iframe>
-                    </div>
-                    <div>
-                        <iframe src="organizations.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1" title="">Tab 1</a></li>
+			<li><a href="#tabs-2" title="">Tab 2</a></li>
+			<li><a href="#tabs-3" title="">Tab 3</a></li>
+		</ul>
+
+		<div id="tabs_container">
+			
+		<div id="tabs-1"><iframe src="individuals.html"></iframe>
+		</div>
+
+		<div id="tabs-2"><iframe src="corporates.html"></iframe>
+		</div>
+
+		<div id="tabs-3"><iframe src="organizations.html"></iframe>
+
+		</div>
+
+		</div><!--End tabs container-->
+		
+	</div><!--End tabs-->
     </section>
 </section>
 <footer>
@@ -105,10 +106,10 @@
 </div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="back2Top.js"></script>
+<script type="text/javascript" src="back2Top.js"></script>
 <script type="text/javascript" src="back2TopFade.js"></script>
 <script type="text/javascript" src="jquery.mambo.min.js"></script>
-<script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+<script type="text/javascript" src="tabulous.js"></script></script>
 
 <script>
 var arrRaised=[28,61,93,143,45,12,69,234,23.33,23,23,42,531,75,98,85,1000]; //stores donated amounts,
@@ -127,26 +128,13 @@ document.getElementById("moneyNeed").innerHTML = 'of $' + money_needed.toFixed(2
 $("#percentage").mambo({ //mambo plugin function
     percentage: percentage.toFixed(0) //rounds up percentage
 });
-
-
-
-//easy responsive accordions
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion           
-            width: '700px', //auto or any width like 600px
-            fit: true,   // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#tabInfo');
-                var $name = $('span', $info);
-
-                $name.text($tab.text());
-
-                $info.show();
-            }
-        });
-    });   
+ 
+$(document).ready(function($) {
+    
+$('#tabs').tabulous({
+    	effect: 'slideLeft'
+    });
+});
 </script>
+
 </html>
