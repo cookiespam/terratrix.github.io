@@ -40,43 +40,41 @@
             <canvas style ="float:left;" id="percentage" width="180" height="180"></canvas>
             <div class="container"> <span id="moneyRaised"></span><br />
                 <span id="moneyNeed"></span><br />
-                <span id="noDonated"></span> <span>donated</span> 
+                <span id="noDonated"></span> <span>donated</span> <br />
+                <div class="donate"> <a href="#">Donate now</a> </div>
                 <br />
-                			<div class="donate">
-				<a href="#">Donate now</a>
-			</div> <br />
             </div>
         </div>
         <div class="contain2">
             <p style="margin-left:30px;margin-top:6px;font-weight:600 ">Singapore Children's Society</p>
             <a href="http://www.childrensociety.org.sg/"><img src="placeholder.png" style="width:100px;height:100px;margin-left:30px;float:left;padding-right:20px;margin-top:18px" alt="Singapore's Children Society"></a>
-            <p style="font-size:14px;padding-bottom:40px;margin-left:50px;text-align:left;margin-top:14px">Singapore Children's Society protects and nurtures children and youth of all races and religions. In 2013, the Society reached out to 72,640 children, youth and families in need. Established in 1952, its services have evolved<br> to meet the changing needs of children.</p>
+            <p style="font-size:14px;padding-bottom:40px;margin-left:50px;text-align:left;margin-top:14px">Singapore Children's Society protects and nurtures children and youth of all races and religions. In 2013, the Society reached out to 72,640 children, youth and families in need. Established in 1952, its services have evolved<br>
+                to meet the changing needs of children.</p>
         </div>
     </section>
     <section id="statements">
         <h5>Select one of the boxes below to find out more about the donators</h5>
-				<div id="tabs">
-		<ul>
-			<li><a href="#tabs-1" title="">Tab 1</a></li>
-			<li><a href="#tabs-2" title="">Tab 2</a></li>
-			<li><a href="#tabs-3" title="">Tab 3</a></li>
-		</ul>
-
-		<div id="tabs_container">
-			
-		<div id="tabs-1"><iframe src="individuals.html"></iframe>
-		</div>
-
-		<div id="tabs-2"><iframe src="corporates.html"></iframe>
-		</div>
-
-		<div id="tabs-3"><iframe src="organizations.html"></iframe>
-
-		</div>
-
-		</div><!--End tabs container-->
-		
-	</div><!--End tabs-->
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1" title="">Tab 1</a></li>
+                <li><a href="#tabs-2" title="">Tab 2</a></li>
+                <li><a href="#tabs-3" title="">Tab 3</a></li>
+            </ul>
+            <div id="tabs_container">
+                <div id="tabs-1">
+                    <iframe src="individuals.html"></iframe>
+                </div>
+                <div id="tabs-2">
+                    <iframe src="corporates.html"></iframe>
+                </div>
+                <div id="tabs-3">
+                    <iframe src="organizations.html"></iframe>
+                </div>
+            </div>
+            <!--End tabs container--> 
+            
+        </div>
+        <!--End tabs--> 
     </section>
 </section>
 <footer>
@@ -101,16 +99,13 @@
         </div>
     </div>
 </footer>
-<div id="back2Top">
-	<a href="#top" onclick="scrollToTop();return false"><img src="Back-to-Top.png" alt="Back to Top" width="80" height="65"></a>
-</div>
+<div id="back2Top"> <a href="#top" onclick="scrollToTop();return false"><img src="Back-to-Top.png" alt="Back to Top" width="80" height="65"></a> </div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="back2Top.js"></script>
 <script type="text/javascript" src="back2TopFade.js"></script>
 <script type="text/javascript" src="jquery.mambo.min.js"></script>
 <script type="text/javascript" src="tabulous.js"></script></script>
-
 <script>
 var arrRaised=[28,61,93,143,45,12,69,234,23.33,23,23,42,531,75,98,85,1000]; //stores donated amounts,
 var money_needed = 10000; //targeted donation amounts
@@ -136,5 +131,4 @@ $('#tabs').tabulous({
     });
 });
 </script>
-
 </html>
