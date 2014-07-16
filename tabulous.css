@@ -82,3 +82,8 @@
     display: block;
     clear: both;
 }
+
+/* remove ff outline */
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
