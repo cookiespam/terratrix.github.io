@@ -439,6 +439,7 @@ ul {
     height: auto
 }
 
+/*tabs */
 .etabs {
     margin: 0 auto;
     padding-left: 210px;
@@ -485,6 +486,8 @@ ul {
 .panel-container {
     margin-bottom: 10px;
 }
+
+/* end */
 
 ul {
     clear: both;
