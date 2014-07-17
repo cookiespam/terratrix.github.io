@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Wireframe</title>
 <link rel="stylesheet" type="text/css" href="index.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome.css" />
 </head>
 <body>
 <header>
@@ -319,26 +320,33 @@
 </section>
 <br>
 <footer>
-    <div class="wrap">
-        <div class="social">
-            <ul>
-                <li><a href="#" class="icon-button twitter"><span class="icon-twitter"></span></a></li>
-                <li><a href="#" class="icon-button facebook"><span class="icon-facebook"></span></a></li>
-                <li><a href="#" class="icon-button instagram"><span class="icon-instagram"></span></a></li>
-            </ul>
-        </div>
-        <div class="clear"></div>
-        <div class="copyright">
-            <p>&copy; Copyright 2014 - Team Toilet. All Rights Reserved.<br />
-                For project purposes only.</p>
-        </div>
-        <div class="misc">
-            <ul>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </div>
-    </div>
+	<div class="wrap">
+		<div class="subscribe">
+			<h3>Mailing List</h3>
+			<form method="get" action="filename.html">
+				<input type="email" id="email" name="email" placeholder="&#xf0e0; Email Address" required />
+				<input type="submit" value="Subscribe!" />
+			</form>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a></li>
+				<li><a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a></li>
+				<li><a href="#" class="icon-button google-plus"><i class="fa fa-google-plus"></i><span></span></a></li>
+				<li><a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<p>&copy; Copyright 2014 - Team Toilet. All Rights Reserved.<br />
+			For project purposes only.</p></div>
+		<div class="misc">
+			<ul>
+				<li><a href="#">Disclaimer</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+	</div>
 </footer>
 <div id="back2Top"> <a href="#top" onclick="scrollToTop();return false"><img src="Back-to-Top.png" alt="Back to Top" width="80" height="65"></a> </div>
 </body>
@@ -374,8 +382,6 @@ $("#percentage").mambo({ //mambo plugin function
 $(document).ready(function() {	
 	$("ul.paging").quickPager();
 });
-</script>
-<script type="text/javascript">
     $(document).ready( function() {
       $('#tab-container').easytabs();
     });
