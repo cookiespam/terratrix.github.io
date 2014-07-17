@@ -106,7 +106,8 @@ nav ul > li > a:hover {
 #tracker {
     overflow: hidden;
     width: auto;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: #F5F5F5
 }
 
 .container {
@@ -129,7 +130,7 @@ nav ul > li > a:hover {
     color: black
 }
 
-h1, h3, h5 {
+h1, h3 {
     margin-left: 28px;
 }
 
@@ -155,7 +156,7 @@ img:hover {
     margin-top: 13px
 }
 
-.donate a,  .donate a:visited,  .donate a:hover,  .donate a:active {
+.donate a, .donate a:visited, .donate a:hover, .donate a:active {
     padding: 7px 15px;
     background-color: #93c054;
     color: #f1f1f1;
@@ -180,7 +181,7 @@ footer {
     padding: 20px 0;
     color: #bebebe;
     font-size: 12px;
-    font-family:FontAwesome !important;
+    font-family: FontAwesome !important;
 }
 
 footer .copyright {
@@ -320,7 +321,7 @@ footer .social ul > li .icon-button .fa-pinterest {
     color: #cb2027;
 }
 
-footer .social ul > li .icon-button:hover .fa-twitter,  footer .social ul > li .icon-button:hover .fa-facebook,  footer .social ul > li .icon-button:hover .fa-google-plus,  footer .social ul > li .icon-button:hover .fa-tumblr,  footer .social ul > li .icon-button:hover .fa-instagram,  footer .social ul > li .icon-button:hover .fa-youtube,  footer .social ul > li .icon-button:hover .fa-pinterest {
+footer .social ul > li .icon-button:hover .fa-twitter, footer .social ul > li .icon-button:hover .fa-facebook, footer .social ul > li .icon-button:hover .fa-google-plus, footer .social ul > li .icon-button:hover .fa-tumblr, footer .social ul > li .icon-button:hover .fa-instagram, footer .social ul > li .icon-button:hover .fa-youtube, footer .social ul > li .icon-button:hover .fa-pinterest {
     color: white;
 }
 
@@ -453,7 +454,7 @@ ul {
 }
 
 .tab a {
-    color: #becbd2;
+    color: #707070;
     font-size: 1.45em;
     display: block;
     outline: none;
@@ -485,7 +486,12 @@ ul {
     margin-bottom: 10px;
 }
 
-
+ul {
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+}
 
 ul.paging {
     font-family: Open Sans;
@@ -503,8 +509,9 @@ ul.simplePagerNav li {
     display: block;
     float: left;
     padding: 3px;
+    padding-right: 15px;
     margin: 0;
-    margin-top: -5px;
+    margin-bottom: 15px;
 }
 
 ul.simplePagerNav li a {
@@ -523,24 +530,26 @@ ul.simplePagerNav li.currentPage a {
 
 .para-statement {
     margin-left: 140px;
-    border-left: 1px solid #1a237e
+    border-left: 1px solid #ACACAC
 }
 
 .para-statement-alt {
     margin-left: 140px;
-    border-left: 1px solid #3f51b5
+    border-left: 1px solid #6A6A6A
 }
 
 .para {
     width: 100%;
     overflow: hidden;
-    background: #3f51b5
+    background: white;
+    color: black
 }
 
 .para-alt {
     width: 100%;
     overflow: hidden;
-    background: #1a237e
+    background: #f9f9f9;
+    color: black
 }
 
 .para-profile {
@@ -573,16 +582,12 @@ img:hover {
 }
 
 .morelink {
-    padding: 7px 15px;
-    background-color: #93c054;
-    color: #f1f1f1;
+    margin-top: 10px;
+    color: #6A6A6A;
     font-size: 16px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 2px;
-    margin-left: 30px;
-    float: right;
-    margin-bottom: 7px;
 }
 
 .morelink:hover {
@@ -600,7 +605,7 @@ img:hover {
     display: block;
 }
 
-div.wrap {
+.wrap {
     width: 960px;
     margin: 0 auto;
 }
@@ -612,4 +617,3 @@ section.content, footer {
 header, footer {
     background-color: #2d2d2d;
 }
-
