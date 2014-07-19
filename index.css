@@ -1,5 +1,6 @@
-*{
-    -webkit-font-smoothing:antialiased;
+
+* {
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -430,14 +431,14 @@ ul {
 }
 
 #statements {
-    height: auto
+    height: auto;
 }
 
 /*tabs */
 .etabs {
     margin: 0 auto;
-    text-align:center;
-    padding-left:50px
+    text-align: center;
+    padding-left: 50px
 }
 
 .tab {
@@ -469,26 +470,22 @@ ul {
     transform-origin: center 3rem;
     transition: transform .3s;
     outline: 1px solid transparent;
-    
-  /*
+    /*
    * The fix for WebKit/Blink browsers.
    */
-  -webkit-backface-visibility: hidden;
-
-  /*
+    -webkit-backface-visibility: hidden;
+    /*
    * The fix for Firefox ... yes, it has to be on one, huge line.
    */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
 }
 
 .tab.active {
     background: #f9f9f9;
-    
 }
 
 .tab a.active {
     color: #47a3da;
-    
 }
 
 .tab-container .panel-container {
@@ -550,7 +547,7 @@ ul.simplePagerNav li.currentPage a {
 .para-statement {
     margin-left: 140px;
     border-left: 1px solid #ACACAC;
-    min-height:65px
+    min-height: 65px
 }
 
 .para {
@@ -560,7 +557,9 @@ ul.simplePagerNav li.currentPage a {
     margin: 0 1rem 0.5rem;
     border-radius: 3px;
     animation: fly-in-from-left .5s .7s ease both;
+    -webkit-animation: fly-in-from-left .5s .7s ease both;
     transform-origin: top left;
+    -webkit-transform-origin: top left;
     width: 100%;
     overflow: hidden;
     color: black
@@ -570,6 +569,9 @@ ul.simplePagerNav li.currentPage a {
     animation-name: fly-in-from-right;
     animation-delay: .7s;
     transform-origin: top right;
+    -webkit-animation-name: fly-in-from-right;
+    -webkit-animation-delay: .7s;
+    -webkit-transform-origin: top right;
 }
  @keyframes fly-in-from-left {
  from {
@@ -580,6 +582,18 @@ ul.simplePagerNav li.currentPage a {
  @keyframes fly-in-from-right {
  from {
  transform:translateY(15rem) rotate(-15deg);
+ opacity:0;
+}
+}
+ @-webkit-keyframes fly-in-from-left {
+ from {
+ -webkit-transform:translateY(15rem) rotate(15deg);
+ opacity:0;
+}
+}
+ @-webkit-keyframes fly-in-from-right {
+ from {
+ -webkit-transform:translateY(15rem) rotate(-15deg);
  opacity:0;
 }
 }
@@ -604,7 +618,7 @@ ul.simplePagerNav li.currentPage a {
 }
 
 .para-profile p {
-    padding-right:20px
+    padding-right: 20px
 }
 
 .para p {
