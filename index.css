@@ -135,7 +135,7 @@ nav ul > li > a:hover {
 }
 
 h1, h3 {
-    margin-left: 28px;
+    margin-left: 20px;
 }
 
 #charityLogo {
@@ -437,7 +437,7 @@ ul {
 .etabs {
     margin: 0 auto;
     text-align:center;
-    padding-left:70px
+    padding-left:50px
 }
 
 .tab {
@@ -549,12 +549,8 @@ ul.simplePagerNav li.currentPage a {
 
 .para-statement {
     margin-left: 140px;
-    border-left: 1px solid #ACACAC
-}
-
-.para-statement-alt {
-    margin-left: 140px;
-    border-left: 1px solid #6A6A6A
+    border-left: 1px solid #ACACAC;
+    min-height:65px
 }
 
 .para {
@@ -607,7 +603,11 @@ ul.simplePagerNav li.currentPage a {
     float: left
 }
 
-.para p, .para-alt p {
+.para-profile p {
+    padding-right:20px
+}
+
+.para p {
     margin: 20px
 }
 
