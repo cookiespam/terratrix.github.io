@@ -55,6 +55,7 @@ body {
     width: 100%;
     position: relative;
     color: #707070;
+    background-color:#f9f9f9;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
@@ -64,9 +65,14 @@ body {
 }
 
 .wrap {
-    width: 960px;
+    width: 50%;
     margin: 0 auto;
+    float:left;
 }
+.wrap1 {
+     width: 50%;
+    margin: 0 auto;
+    float:left;}
 
 section.content, footer {
     clear: both;
@@ -274,7 +280,6 @@ section.less-padding {
 }
 
 section.white {
-    background-color: #f1f1f1;
     color: #454545;
 }
 
@@ -507,19 +512,22 @@ footer .misc ul > li > a:hover {
 
 /* social buttons */
 .social {
-    margin-top: 50px;
+    
 }
 
 .social ul {
     list-style-type: none;
+    float:right;
+    margin-right:20px;
+    margin-top:-70px;
 }
 
 .social ul > li {
-    display: inline;
+    
 }
 
 .social ul > li {
-    margin-right: 60px;
+    margin-top: 60px;
 }
 
 .social ul > li:last-child {
@@ -639,7 +647,7 @@ footer .misc ul > li > a:hover {
 }
 
 .social ul > li .icon-button:hover .fa-twitter, .social ul > li .icon-button:hover .fa-facebook, .social ul > li .icon-button:hover .fa-google-plus, .social ul > li .icon-button:hover .fa-tumblr, .social ul > li .icon-button:hover .fa-instagram, .social ul > li .icon-button:hover .fa-youtube, .social ul > li .icon-button:hover .fa-pinterest {
-    color: white;
+    color: blue;
 }
 
 .misc {
@@ -651,7 +659,7 @@ footer .misc ul > li > a:hover {
 }
 
 .misc ul > li {
-    display: inline;
+    
 }
 
 .misc ul > li:after {
