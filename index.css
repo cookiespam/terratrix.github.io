@@ -111,6 +111,7 @@ ul {
 
 #statements {
     height: auto;
+    background-color:#f9f9f9
 }
 
 /*tabs */
@@ -161,7 +162,7 @@ ul {
 }
 
 .tab.active {
-    background: white;
+    background: #f9f9f9;
 }
 
 .tab a.active {
@@ -169,7 +170,7 @@ ul {
 }
 
 .tab-container .panel-container {
-    background: white;
+    background: #f9f9f9;
     height: auto
 }
 
@@ -181,7 +182,7 @@ ul {
 
 ul.paging {
     font-family: Open Sans;
-    background: white;
+    background: #f9f9f9;
     width: 100%;
     margin-bottom: 1px;
 }
