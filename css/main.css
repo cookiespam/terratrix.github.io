@@ -208,7 +208,7 @@ section.featured div.content {
 
 section.celebrity {
     height: 100%;
-    background-color: #f67d42;
+    background-color: #0CB271;
 }
 
 section.celebrity h1 {
@@ -240,7 +240,7 @@ section.celebrity div.picture {
 }
 
 section.celebrity div.picture img {
-    border: 10px solid #ec6421;
+    border: 10px solid #087249;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -364,7 +364,7 @@ article.gold h2 > i[class*="fa"] {
 }
 
 article.orange h2 > i[class*="fa"] {
-    color: #f67d42;
+    color: #0CB271;
 }
 
 article.green h2 > i[class*="fa"] {
@@ -413,7 +413,7 @@ article.gold div.box a:hover {
 
 article.orange div.box a, article.orange div.box a:visited, article.orange div.box a:hover, article.orange div.box a:active {
     padding: 7px 15px;
-    background-color: #f67d42;
+    background-color: #0CB271;
     color: #f1f1f1;
     font-size: 16px;
     text-decoration: none;
@@ -997,7 +997,7 @@ button {
     height: 50px;
     margin-bottom: 50px;
     background-color: #2D2D2D;
-    color: #FF6344;
+    color: #0CB271;
     font: 20px "Open Sans";
     font-weight: bold;
     text-transform: uppercase;
@@ -1013,7 +1013,7 @@ button {
 
 button:hover {
     background-color: #FFFFFF;
-    border: 3px solid #FF6344;
+    border: 3px solid #0CB271;
 }
 
 .input-logo {
@@ -1065,7 +1065,7 @@ input[type=submit].submit {
     height: 50px;
     margin: 20px 0 50px 0;
     background-color: #2D2D2D;
-    color: #FF6344;
+    color: #0CB271;
     font: 20px "Open Sans";
     font-weight: bold;
     text-transform: uppercase;
@@ -1081,10 +1081,10 @@ input[type=submit].submit {
 
 input[type=submit].submit:hover {
     background-color: #FFFFFF;
-    border: 3px solid #FF6344;
+    border: 3px solid #0CB271;
 }
 
 input[type=text]#name:focus, input[type=email]#emailAddress:focus, textarea:focus {
     background-color: #FFFFFF;
-    border: 2px solid #FF6344;
+    border: 2px solid #0CB271;
 }
