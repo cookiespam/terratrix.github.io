@@ -524,15 +524,22 @@ ul.simplePagerNav {
 ul.simplePagerNav li {
     display: block;
     float: left;
-    padding: 3px;
-    padding-right: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
     margin: 0;
+    margin-top:5px;
     margin-bottom: 15px;
+    border:2px solid #47a3da;
+    border-radius:5px;
+    text-align:center;
+    margin-right:7.5px;
+    background-color:white;
 }
 
 ul.simplePagerNav li a {
     color: black;
     text-decoration: none;
+    text-align:center
 }
 
 li.currentPage {
