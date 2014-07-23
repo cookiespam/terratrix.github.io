@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/hacks.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+</head>
+<body>
+<header>
+    <div class="wrap">
+        <div id="logo">
+            <p>logo</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">About Us</a>
+                    <ul class="second">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Our Services</a>
+                    <ul class="third">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Campaigns</a>
+                    <ul class="fourth">
+                        <li><a href="#">Celebrities</a></li>
+                        <li><a href="#">Celebrities 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="featured celebrity">
+    <div class="wrap">
+        <div class="float-left content">
+            <h1>Contact Us <br>
+                <span class="white">For any enquires.</span></h1>
+            <br />
+            <h3 style="color:#f9f9f9">We are on social media as well</h3>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icon-button google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="float-right picture"> <img src="images/celebrities-featured.jpg" alt="Celebrity giving a hand" /> </div>
+    </div>
+</section>
+<section class="content three white less-padding" style="float:none">
+    <div class="wrap">
+    <form method="get" action="filename.html" id="usrform">
+        <label for="name">Your name</label>
+        <br />
+        <span class="input-logo"><i class="fa fa-user"></i></span>
+        <input type="text" id="name" name="name" placeholder="John Smith" title="Optional"/>
+        <br />
+        <br />
+        <label for="emailAddress">Email<span class="asterisk"><i class="fa fa-asterisk"></i></span></label>
+        <br />
+        <span class="input-logo"><i class="fa fa-envelope"></i></span>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="example@email.com" title="To allow us to contact you" required/>
+        <br />
+        <br />
+        <label for="comment">Message<span class="asterisk"><i class="fa fa-asterisk"></i></span></label>
+        <br>
+        <TEXTAREA NAME="comment" ROWS="6" COLS="50" title="Your comment will be much appreciated!" ></TEXTAREA>
+        <div class="clear"></div>
+        <br>
+        <input type="submit" class="submit" value="Tell us!" />
+        </div>
+    </form>
+</section>
+<footer>
+    <div class="wrap">
+        <div class="subscribe">
+            <h3>Mailing List</h3>
+            <form method="get" action="filename.html">
+                <input type="email" id="email" name="email" placeholder="&#xf0e0; Email Address" required />
+                <input type="submit" value="Subscribe!" />
+            </form>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icon-button google-plus"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="copyright">
+            <p>&copy; Copyright 2014 - Team Toilet. All Rights Reserved.<br />
+                For project purposes only.</p>
+        </div>
+        <div class="misc">
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script>      $("#usrform :input, #usrform textarea").tooltip({
+ 
+      // place tooltip on the right edge
+      position: "center right",
+ 
+      // a little tweaking of the position
+      offset: [-2, 10],
+ 
+      // use the built-in fadeIn/fadeOut effect
+      effect: "fade",
+ 
+      // custom opacity setting
+      opacity: 0.7
+ 
+      });</script>
+</html>
