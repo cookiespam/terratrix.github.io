@@ -527,7 +527,6 @@ footer .misc ul > li > a:hover {
 }
 
 .social ul > li {
-    
 }
 
 .social ul > li {
@@ -651,7 +650,7 @@ footer .misc ul > li > a:hover {
 }
 
 .social ul > li .icon-button:hover .fa-twitter, .social ul > li .icon-button:hover .fa-facebook, .social ul > li .icon-button:hover .fa-google-plus, .social ul > li .icon-button:hover .fa-tumblr, .social ul > li .icon-button:hover .fa-instagram, .social ul > li .icon-button:hover .fa-youtube, .social ul > li .icon-button:hover .fa-pinterest {
-    color: blue;
+    color: #3B3B3B;
 }
 
 .misc {
@@ -663,7 +662,7 @@ footer .misc ul > li > a:hover {
 }
 
 .misc ul > li {
-    
+    display: inline;
 }
 
 .misc ul > li:after {
